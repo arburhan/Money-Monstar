@@ -18,14 +18,16 @@
         <h1 class="text-center text-success py-5">Money Monstar <i class="fa-solid fa-dollar-sign"></i></h1>
         <div class="container row row-cols-1 row-cols-md-2 mx-auto">
             <div class="col order-0 order-md-0">
-                <img src="image/calculate.jpg" alt="" class="img-fluid h-100 w-100">
+                <img src="image/calculate.jpg" alt="" class="img-fluid h-100">
             </div>
             <div class="col calculate-sec order-1 order-md-1 text-center p-4">
+                <!-- income -->
                <div class="income">
                     <h3 class="py-3">Income</h3>
                     <p>Income:  <input type="number"   placeholder="your income" name="income" id="income-id">
                     </p>
                </div>
+               <!-- expense section -->
                 <div class="expenses">
                     <h3 class="py-3">Expenses</h3>
                     <p>Food:  <input type="number"  placeholder="expense on food" name="income" id="foodValue">
@@ -41,23 +43,24 @@
                     <h3 class="py-3">Total Expense: <span id="total-expeses">00</span></h3>
                     <h3 class="py-2">Balance: <span id="balance">00</span></h3>
                 </div>
-                <div class="savings-section">
+                <!-- saving section -->
+                <div>
                     <div class="row align-items-center">
-                        <div class="col">
-                            <p>Save:</p>
+                        <div class="col-3 p-0">
+                            <p class="p-0 m-0">Save:</p>
                         </div>
-                        <div class="col">
-                            <input id="save-percent" placeholder="saving %" type="text">
+                        <div class="col-3 p-0">
+                            <input id="save-percent" placeholder="saving %" type="text" size="15">
                         </div>
-                        <div class="col">
-                            <p>	&#37;</p>
+                        <div class="col-3">
+                            <p class="m-0">	&#37;</p>
                         </div>
-                        <div class="col">
-                            <button id="savings" class="btn btn-primary px-4 py-2">Save</button>
+                        <div class="col-3">
+                            <button id="savings" class="btn btn-primary px-4 py-2 fw-bold">Save</button>
                         </div>
                     </div>
                       
-                    <h3 class="py-2">Saving Amount: <span class="saving-amount" id="save-amount">00</span></h3>
+                    <h3 class="py-2 py-3">Saving Amount: <span class="saving-amount" id="save-amount">00</span></h3>
                     <h3 class="py-2">Remaining Balance: <span class="remaining-balance" id="remain">00</span></h3>
                 </div>
 

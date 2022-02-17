@@ -2,14 +2,16 @@
 function conversionValue(idName){
 
     const validInfo = document.getElementById('calculate-validate');
-    const inputId = document.getElementById(idName).value;
-    const inputNumber = parseFloat(inputId);
+    const inputId = document.getElementById(idName);
+    const inputNumber = parseFloat(inputId.value);
     
     if(inputNumber<0){
         validInfo.innerText ="Enter Positive value";
-    }else if(isNaN(inputNumber)){
-        validInfo.innerText = "Enter Psitive value";
-    }else{       
+    }
+    else if(isNaN(validInfo)){
+        validInfo.innerText = "Enter Positive value";
+    }
+    else{       
         validInfo.innerText = "";
     }
 
@@ -32,10 +34,13 @@ document.getElementById('calculate').addEventListener('click',function(){
     const balance = document.getElementById('balance');
     balance.innerText = totalBalanceValue;
 
-
+    if(balance<0){
+        balance.innerText = '00';
+    }
     if(income<conTotalExp){
         balance.innerText = 'expense high';
     }
+    
 })
 
 // Saving Calculation
@@ -47,7 +52,6 @@ document.getElementById('savings').addEventListener('click',function(){
     const parcent = (income*saveParcent)/defParaMeter;
     const saveAmount = document.getElementById
     ('save-amount');
-    
     saveAmount.innerText = parcent;
     
     const saveAmountVal =saveAmount.innerText;
@@ -64,7 +68,8 @@ document.getElementById('savings').addEventListener('click',function(){
     remBalance.innerText = remainBalance;
 
     if(isNaN(balanceCon)){
-        remBalance.innerText = "Invalid Balance";
-    }
-    
+        const debt = 'You are in debt';
+        saveAmount.innerText = debt;
+        remBalance.innerText = debt;
+    } 
 })
