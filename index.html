@@ -23,23 +23,26 @@
             <div class="col calculate-sec order-1 order-md-1 text-center p-4">
                <div class="income">
                     <h3 class="py-3">Income</h3>
-                    <p>Income:  <input type="number"    placeholder="your income" name="income" id="">
+                    <p>Income:  <input type="number"    placeholder="your income" name="income" id="income-id">
                     </p>
                </div>
                 <div class="expenses">
                     <h3 class="py-3">Expenses</h3>
-                    <p>Food:  <input type="number" placeholder="expense on food" name="income" id="">
-                    <p>Rent:  <input type="number" placeholder="expense on rent" name="income" id="">
-                    <p>Cloths:  <input type="number" placeholder="expense on cloths" name="income" id="">
+                    <p>Food:  <input type="number" placeholder="expense on food" name="income" id="foodValue">
+                    <p>Rent:  <input type="number" placeholder="expense on rent" name="income" id="rentid">
+                    <p>Cloths:  <input type="number" placeholder="expense on cloths" name="income" id="clothid">
                 </p>
                 </div>
                 <div class="calculate">
-                    <button class="bg-primary bg-opacity-75 rounded text-white fw-bold px-5 py-2 border-0 fs-5 text">Calculate</button>
+                    <button id="calculate" class="bg-primary bg-opacity-75 rounded text-white fw-bold px-5 py-2 border-0 fs-5 text">Calculate</button>
+
+                    <p id="calculate-validate" class="text-center"></p>
+
                     <h3 class="py-3">Total Expense: <span id="total-expeses">00</span></h3>
                     <h3 class="py-2">Balance: <span id="balance">00</span></h3>
                 </div>
                 <div class="savings-section">
-                    <p>Save: <input placeholder="saving %" type="text"> % <button class="bg-primary bg-opacity-75 rounded text-white fw-bold px-5 py-2 border-0 fs-5 text">Save</button>
+                    <p>Save: <input id="savings" placeholder="saving %" type="text"> % <button class="bg-primary bg-opacity-75 rounded text-white fw-bold px-5 py-2 border-0 fs-5 text">Save</button>
                     <h3 class="py-2">Saving Amount: <span class="saving-amount">00</span></h3>
                     <h3 class="py-2">Remaining Balance: <span class="remaining-balance">00</span></h3>
                 </div>
