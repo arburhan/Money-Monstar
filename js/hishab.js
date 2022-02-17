@@ -8,7 +8,7 @@ function conversionValue(idName){
     if(inputNumber<0){
         validInfo.innerText ="Enter Positive value";
     }
-    else if(isNaN(validInfo)){
+    else if(isNaN(inputNumber)){
         validInfo.innerText = "Enter Positive value";
     }
     else{       
