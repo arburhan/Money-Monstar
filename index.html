@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <!-- bootstrap css -->
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <!-- custom css -->
+    <link rel="stylesheet" href="css/style.css">
+    <!-- fontawsome -->
+    <!-- fontawsome -->
+    <script src="https://kit.fontawesome.com/73e098e640.js" crossorigin="anonymous"></script>
+</head>
+<body>
+    <section>
+        <h1 class="text-center text-success py-5">Money Monstar <i class="fa-solid fa-dollar-sign"></i></h1>
+        <div class="container row row-cols-1 row-cols-md-2 mx-auto">
+            <div class="col order-0 order-md-0">
+                <img src="image/calculate.jpg" alt="" class="img-fluid h-100 w-100">
+            </div>
+            <div class="col calculate-sec order-1 order-md-1 text-center p-4">
+               <div class="income">
+                    <h3 class="py-3">Income</h3>
+                    <p>Income:  <input type="number"    placeholder="your income" name="income" id="">
+                    </p>
+               </div>
+                <div class="expenses">
+                    <h3 class="py-3">Expenses</h3>
+                    <p>Food:  <input type="number" placeholder="expense on food" name="income" id="">
+                    <p>Rent:  <input type="number" placeholder="expense on rent" name="income" id="">
+                    <p>Cloths:  <input type="number" placeholder="expense on cloths" name="income" id="">
+                </p>
+                </div>
+                <div class="calculate">
+                    <button class="bg-primary bg-opacity-75 rounded text-white fw-bold px-5 py-2 border-0 fs-5 text">Calculate</button>
+                    <h3 class="py-3">Total Expense: <span id="total-expeses">00</span></h3>
+                    <h3 class="py-2">Balance: <span id="balance">00</span></h3>
+                </div>
+                <div class="savings-section">
+                    <p>Save: <input placeholder="saving %" type="text"> % <button class="bg-primary bg-opacity-75 rounded text-white fw-bold px-5 py-2 border-0 fs-5 text">Save</button>
+                    <h3 class="py-2">Saving Amount: <span class="saving-amount">00</span></h3>
+                    <h3 class="py-2">Remaining Balance: <span class="remaining-balance">00</span></h3>
+                </div>
+
+            </div>
+        </div>
+    </section>
+    <!-- bootstrap js -->
+    <script src="js/bootstrap.bundle.min.js"></script>
+    <!-- custom js -->
+    <script src="js/hishab.js"></script>
+</body>
+</html>
